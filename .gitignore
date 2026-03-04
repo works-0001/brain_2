@@ -1,0 +1,38 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build Outputs
+dist
+.next
+out
+build
+
+# Environment
+.env
+.env*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode
+.idea
+*.swp
+
+# Testing
+coverage
+playwright-report
+test-results
+
+# Temporary
+uploads/
+tmp/
+docs/memo/
