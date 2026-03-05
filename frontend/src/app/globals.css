@@ -56,21 +56,25 @@
   --color-txt-inf: var(--color-blue-700);
 
   /* --- Spacing (spc) --- */
-  --spacing-spc-xs: 0.25rem; /* 4px */
-  --spacing-spc-sm: 0.5rem; /* 8px */
-  --spacing-spc-md: 0.75rem; /* 12px */
-  --spacing-spc-lg: 1rem; /* 16px */
-  --spacing-spc-xl: 1.25rem; /* 20px */
-  --spacing-spc-2xl: 1.5rem; /* 24px */
+  --spacing-spc-xs: var(--spacing-1); /* 4px  — compact component padding */
+  --spacing-spc-sm: var(
+    --spacing-2
+  ); /* 8px  — standard padding, button group gap */
+  --spacing-spc-md: var(
+    --spacing-4
+  ); /* 16px — button padding, card element gap */
+  --spacing-spc-lg: var(--spacing-6); /* 24px — section inner spacing */
+  --spacing-spc-xl: var(--spacing-8); /* 32px — page section spacing */
+  --spacing-spc-2xl: var(--spacing-12); /* 48px — layout margin */
 
   /* --- Radius (rad) --- */
-  --radius-rad-xs: 0.125rem; /* 2px */
-  --radius-rad-sm: 0.25rem; /* 4px */
-  --radius-rad-md: 0.375rem; /* 6px */
-  --radius-rad-lg: 0.5rem; /* 8px */
-  --radius-rad-xl: 0.75rem; /* 12px */
-  --radius-rad-2xl: 1rem; /* 16px */
-  --radius-rad-full: 9999px;
+  --radius-rad-xs: var(--radius-xs); /* 2px */
+  --radius-rad-sm: var(--radius-sm); /* 4px */
+  --radius-rad-md: var(--radius-md); /* 6px */
+  --radius-rad-lg: var(--radius-lg); /* 8px */
+  --radius-rad-xl: var(--radius-xl); /* 12px */
+  --radius-rad-2xl: var(--radius-2xl); /* 16px */
+  --radius-rad-full: 9999px; /* Tailwind に --radius-full は未定義のため例外 */
 
   /* --- Elevation / Shadow (shd) --- */
   --shadow-shd-xs: var(--shadow-xs);
@@ -90,14 +94,15 @@
 
   /* --- Font (fnt) --- */
   --font-fnt-body: var(--font-sans);
-  --font-fnt-code: 'Geist Mono', monospace;
+  --font-fnt-code: var(--font-mono);
 
-  /* --- Motion (dur / eas) --- */
+  /* --- Motion: Duration (dur) --- Tailwind に duration 変数が存在しないため例外 */
   --ease-dur-short: 100ms;
   --ease-dur-medium: 200ms;
   --ease-dur-long: 400ms;
 
-  --ease-eas-out: ease-out;
-  --ease-eas-in: ease-in;
-  --ease-eas-io: ease-in-out;
+  /* --- Motion: Easing (eas) --- */
+  --ease-eas-out: var(--ease-out);
+  --ease-eas-in: var(--ease-in);
+  --ease-eas-io: var(--ease-in-out);
 }
