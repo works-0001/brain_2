@@ -1,7 +1,7 @@
 import app from './app.ts';
 
 describe('Hono app', () => {
-  it('GET / は JSON で APP_NAME を含むメッセージを返す', async () => {
+  it('ルートエンドポイントはAPIの識別情報を返す', async () => {
     const response = await app.request('/');
     const body = await response.json();
 

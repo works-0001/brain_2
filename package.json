@@ -5,8 +5,8 @@
   "type": "module",
   "packageManager": "pnpm@10.17.0",
   "engines": {
-    "node": ">=22.0.0",
-    "pnpm": ">=10.0.0"
+    "node": ">=22.19.0",
+    "pnpm": ">=10.17.0"
   },
   "scripts": {
     "dev": "pnpm --parallel --filter frontend --filter backend dev",

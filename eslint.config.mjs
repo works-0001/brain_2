@@ -107,6 +107,14 @@ export default defineConfig([
             'sibling',
             'index',
           ],
+          pathGroups: [
+            {
+              pattern: '@brain-1/**',
+              group: 'external',
+              position: 'after',
+            },
+          ],
+          pathGroupsExcludedImportTypes: ['builtin'],
           'newlines-between': 'always',
           alphabetize: { order: 'asc', caseInsensitive: true },
         },

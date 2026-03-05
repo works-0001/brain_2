@@ -1,5 +1,6 @@
-import { APP_NAME } from '@brain-1/shared';
 import { Hono } from 'hono';
+
+import { APP_NAME } from '@brain-1/shared';
 
 const app = new Hono();
 
