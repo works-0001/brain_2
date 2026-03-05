@@ -1,0 +1,25 @@
+{
+  "name": "@brain-1/backend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc --noEmit",
+    "start": "node --import tsx src/index.ts",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@brain-1/shared": "workspace:*",
+    "@hono/node-server": "^1.19.11",
+    "hono": "^4.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "25.3.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

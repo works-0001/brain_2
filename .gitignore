@@ -27,10 +27,16 @@ Thumbs.db
 .idea
 *.swp
 
+# TypeScript
+*.tsbuildinfo
+
 # Testing
 coverage
 playwright-report
 test-results
+
+# Storybook
+storybook-static
 
 # Temporary
 uploads/

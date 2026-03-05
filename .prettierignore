@@ -1,0 +1,25 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+.next
+out
+build
+
+# TypeScript
+*.tsbuildinfo
+
+# Lock files
+pnpm-lock.yaml
+
+# Testing
+coverage
+playwright-report
+test-results
+
+# Storybook
+storybook-static
+
+# Generated
+next-env.d.ts

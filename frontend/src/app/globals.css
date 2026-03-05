@@ -1,0 +1,99 @@
+@import 'tailwindcss';
+
+/*
+ * Design Tokens — TLA Naming Convention
+ *
+ * STRUCTURE: --[property]-[CAT]-[ROL/SIZE]
+ * SOURCE OF TRUTH: このファイル (frontend/src/app/globals.css)
+ * REFERENCE: docs/2_design/ui/ui_ux_foundation.md Appendix
+ * POLICY: 全ての値は Tailwind のデフォルト変数にマッピングする。
+ *         ハードコード値は原則禁止。
+ * NOTE: 状態変化 (Hover / Pressed 等) はトークンではなく
+ *       Tailwind の hover: / pressed: 修飾子で実現する。
+ */
+@theme {
+  /* --- Colors: Text (txt) --- */
+  --color-txt-dft: var(--color-zinc-800); /* Default text */
+  --color-txt-sub: var(--color-zinc-500); /* Subtle text */
+  --color-txt-inv: var(--color-white); /* Inverse text (on bold backgrounds) */
+  --color-txt-dis: var(--color-zinc-300); /* Disabled text */
+
+  /* --- Colors: Background (bkg) --- */
+  --color-bkg-dft: var(--color-white); /* Default surface */
+  --color-bkg-sub: var(--color-zinc-100); /* Subtle / neutral surface */
+  --color-bkg-mut: var(--color-zinc-50); /* Muted surface */
+  --color-bkg-inv: var(--color-zinc-900); /* Inverse surface */
+
+  /* --- Colors: Border (bdr) --- */
+  --color-bdr-dft: var(--color-zinc-200); /* Default border */
+  --color-bdr-foc: var(--color-blue-500); /* Focus ring / outline */
+  --color-bdr-err: var(--color-red-500); /* Error border */
+
+  /* --- Colors: Interactive (int) --- */
+  --color-int-prm: var(--color-blue-700); /* Primary action (brand) */
+  --color-int-hov: var(--color-blue-800); /* Primary hovered */
+  --color-int-act: var(--color-blue-900); /* Primary pressed / active */
+
+  /* --- Colors: Status / Feedback (sts, bkg-*, txt-*) --- */
+  --color-sts-err: var(--color-red-600); /* Error / Danger */
+  --color-bkg-err: var(--color-red-50);
+  --color-txt-err: var(--color-red-700);
+
+  --color-sts-suc: var(--color-green-600); /* Success */
+  --color-bkg-suc: var(--color-green-50);
+  --color-txt-suc: var(--color-green-700);
+
+  --color-sts-wrn: var(--color-amber-500); /* Warning */
+  --color-bkg-wrn: var(--color-amber-50);
+  --color-txt-wrn: var(--color-amber-700);
+
+  --color-sts-inf: var(--color-blue-600); /* Information */
+  --color-bkg-inf: var(--color-blue-50);
+  --color-txt-inf: var(--color-blue-700);
+
+  /* --- Spacing (spc) --- */
+  --spacing-spc-xs: 0.25rem; /* 4px */
+  --spacing-spc-sm: 0.5rem; /* 8px */
+  --spacing-spc-md: 0.75rem; /* 12px */
+  --spacing-spc-lg: 1rem; /* 16px */
+  --spacing-spc-xl: 1.25rem; /* 20px */
+  --spacing-spc-2xl: 1.5rem; /* 24px */
+
+  /* --- Radius (rad) --- */
+  --radius-rad-xs: 0.125rem; /* 2px */
+  --radius-rad-sm: 0.25rem; /* 4px */
+  --radius-rad-md: 0.375rem; /* 6px */
+  --radius-rad-lg: 0.5rem; /* 8px */
+  --radius-rad-xl: 0.75rem; /* 12px */
+  --radius-rad-2xl: 1rem; /* 16px */
+  --radius-rad-full: 9999px;
+
+  /* --- Elevation / Shadow (shd) --- */
+  --shadow-shd-xs: var(--shadow-xs);
+  --shadow-shd-sm: var(--shadow-sm);
+  --shadow-shd-md: var(--shadow-md);
+  --shadow-shd-lg: var(--shadow-lg);
+  --shadow-shd-xl: var(--shadow-xl);
+  --shadow-shd-2xl: var(--shadow-2xl);
+
+  /* --- Typography (tsz) --- */
+  --text-tsz-xs: var(--text-xs); /* 12px */
+  --text-tsz-sm: var(--text-sm); /* 14px */
+  --text-tsz-md: var(--text-base); /* 16px */
+  --text-tsz-lg: var(--text-lg); /* 18px */
+  --text-tsz-xl: var(--text-xl); /* 20px */
+  --text-tsz-2xl: var(--text-2xl); /* 24px */
+
+  /* --- Font (fnt) --- */
+  --font-fnt-body: var(--font-sans);
+  --font-fnt-code: 'Geist Mono', monospace;
+
+  /* --- Motion (dur / eas) --- */
+  --ease-dur-short: 100ms;
+  --ease-dur-medium: 200ms;
+  --ease-dur-long: 400ms;
+
+  --ease-eas-out: ease-out;
+  --ease-eas-in: ease-in;
+  --ease-eas-io: ease-in-out;
+}

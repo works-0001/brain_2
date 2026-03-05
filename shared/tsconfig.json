@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "dist",
+    "noEmit": false,
+    "rewriteRelativeImportExtensions": true,
+    "rootDir": "src",
+    "lib": ["ES2022"],
+    "types": ["vitest/globals"]
+  },
+  "include": ["src"]
+}
