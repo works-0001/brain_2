@@ -19,9 +19,13 @@
   --color-txt-dis: var(--color-zinc-300); /* Disabled text */
 
   /* --- Colors: Background (bkg) --- */
-  --color-bkg-dft: var(--color-white); /* Default surface */
+  --color-bkg-dft: var(
+    --color-zinc-50
+  ); /* Default surface (warm neutral, not pure white) */
   --color-bkg-sub: var(--color-zinc-100); /* Subtle / neutral surface */
-  --color-bkg-mut: var(--color-zinc-50); /* Muted surface */
+  --color-bkg-mut: var(
+    --color-white
+  ); /* Card / elevated surface (sits above base) */
   --color-bkg-inv: var(--color-zinc-900); /* Inverse surface */
 
   /* --- Colors: Border (bdr) --- */
