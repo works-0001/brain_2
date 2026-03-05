@@ -23,3 +23,6 @@ storybook-static
 
 # Generated
 next-env.d.ts
+
+# TAKT
+.takt

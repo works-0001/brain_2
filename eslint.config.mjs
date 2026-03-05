@@ -25,6 +25,7 @@ export default defineConfig([
     '**/postcss.config.*',
     '**/next.config.*',
     '**/storybook-static/**',
+    '.takt/**',
   ]),
 
   // ──────────────────────────────────────────────
