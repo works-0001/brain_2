@@ -96,6 +96,18 @@ export default defineConfig([
       'shared/**/*.{ts,js}',
     ],
     extends: [importXConfigs.recommended, importXConfigs.typescript],
+    settings: {
+      'import-x/resolver': {
+        typescript: {
+          alwaysTryTypes: true,
+          project: [
+            'frontend/tsconfig.json',
+            'backend/tsconfig.json',
+            'shared/tsconfig.json',
+          ],
+        },
+      },
+    },
     rules: {
       'import-x/order': [
         'error',

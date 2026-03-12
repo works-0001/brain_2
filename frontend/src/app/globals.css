@@ -106,3 +106,12 @@
   --ease-eas-in: var(--ease-in);
   --ease-eas-io: var(--ease-in-out);
 }
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  .dark {
+    color-scheme: dark;
+  }
+}
