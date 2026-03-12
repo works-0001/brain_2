@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
+import { NuqsAdapter } from 'nuqs/adapters/next/app';
 
+import { Footer } from '@/components/layouts/Footer';
+import { Header } from '@/components/layouts/Header';
 import { ThemeProvider } from '@/components/layouts/ThemeProvider';
 
 import './globals.css';
@@ -20,7 +23,13 @@ export default function RootLayout({
   return (
     <html lang="ja" suppressHydrationWarning>
       <body className="min-h-screen bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
-        <ThemeProvider>{children}</ThemeProvider>
+        <NuqsAdapter>
+          <ThemeProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </ThemeProvider>
+        </NuqsAdapter>
       </body>
     </html>
   );
