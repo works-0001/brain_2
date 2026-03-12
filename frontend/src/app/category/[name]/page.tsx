@@ -12,7 +12,7 @@ interface Props {
 
 export async function generateStaticParams() {
   const categories = await getCategories();
-  return categories.map((name) => ({ name: encodeURIComponent(name) }));
+  return categories.map((name) => ({ name }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
