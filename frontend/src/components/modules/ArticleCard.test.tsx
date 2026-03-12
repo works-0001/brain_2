@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 
 import type { Article } from '@brain-1/shared';
 
-import { ArticleCard } from './ArticleCard.tsx';
+import { ArticleCard } from './ArticleCard';
 
 const mockArticle: Article = {
   id: 'article_001',
