@@ -1,16 +1,23 @@
-import type { AppConfig } from '@brain-1/shared';
-import { APP_NAME, APP_VERSION } from '@brain-1/shared';
+import { Suspense } from 'react';
 
-/** アプリケーション設定（shared 型の使用検証） */
-const config: AppConfig = {
-  appName: APP_NAME,
-  version: APP_VERSION,
-};
+import { ArticleListClient } from '@/components/modules/ArticleListClient';
+import { CategoryNav } from '@/components/modules/CategoryNav';
+import { getAllArticles, getCategories } from '@/lib/articles';
 
-export default function HomePage() {
+export default async function HomePage() {
+  const [articles, categories] = await Promise.all([
+    getAllArticles(),
+    getCategories(),
+  ]);
+
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <h1 className="text-4xl font-bold">{config.appName}</h1>
-    </main>
+    <div className="mx-auto max-w-7xl px-4 py-8">
+      <div className="mb-6">
+        <CategoryNav categories={categories} />
+      </div>
+      <Suspense>
+        <ArticleListClient articles={articles} perPage={10} />
+      </Suspense>
+    </div>
   );
 }
