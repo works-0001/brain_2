@@ -25,6 +25,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Build shared
+        run: pnpm --filter @brain-1/shared build
+
       - name: Build
         run: pnpm --filter @brain-1/frontend build
         env:
