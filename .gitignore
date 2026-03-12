@@ -42,3 +42,8 @@ storybook-static
 uploads/
 tmp/
 .tmp/
+
+# Internal / Private
+.claude/
+.takt/
+docs/
