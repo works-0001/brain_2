@@ -1,10 +1,15 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 import { ArticleSchema, type Article } from '@brain-1/shared';
 
-// Next.js ビルド時の cwd は frontend/ ディレクトリ
-const ARTICLES_DIR = path.join(process.cwd(), '../data/articles');
+// Use import.meta.url to get a cwd-independent path.
+// articles.ts is at frontend/src/lib/ → go up 3 levels to reach monorepo root,
+// then descend into data/articles.
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const ARTICLES_DIR = path.join(__dirname, '../../../data/articles');
 
 function readArticle(filename: string): Article | null {
   const filepath = path.join(ARTICLES_DIR, filename);
