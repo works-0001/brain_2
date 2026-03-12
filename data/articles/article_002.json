@@ -1,0 +1,13 @@
+{
+  "id": "article_002",
+  "title": "GitHub Pages でニュースサイトを運用する方法",
+  "category": "テック",
+  "date": "2026-03-12",
+  "author": "SUMMARIZE編集部",
+  "thumbnail": "assets/images/article_002_thumb.jpeg",
+  "summary": "GitHub Pages を使った静的サイトのコンテンツ管理手法を解説。JSON ファイルで記事を管理し、GitHub Actions で自動デプロイする方法を紹介する。",
+  "text": "GitHub Pages は無料で静的サイトをホスティングできるサービスだ。\n\nJSON ファイルを Git リポジトリで管理することで、バージョン管理された記事管理が実現できる。\n\nGitHub Actions と組み合わせることで、記事を push するだけで自動的にサイトが更新される仕組みを構築できる。",
+  "images": [],
+  "movies": [],
+  "related": ["article_001"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "article_001",
+  "title": "Next.js 16 の新機能まとめ",
+  "category": "テック",
+  "date": "2026-03-13",
+  "author": "SUMMARIZE編集部",
+  "thumbnail": "assets/images/article_001_thumb.jpeg",
+  "summary": "Next.js 16 がリリースされた。パフォーマンス改善と新しい静的エクスポート機能について詳しく解説する。",
+  "text": "Next.js 16 がついにリリースされた。\n\n今回のアップデートでは、静的エクスポートの改善が大きなポイントとなっている。\n\nまた、React 19 との統合もさらに強化され、開発者体験が向上した。",
+  "images": [],
+  "movies": [
+    {
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
+      "title": "Next.js 16 解説動画"
+    }
+  ],
+  "related": ["article_002"]
+}
