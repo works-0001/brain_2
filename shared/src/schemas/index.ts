@@ -4,3 +4,5 @@
  * frontend（フォーム入力検証）と backend（リクエストボディ検証）の
  * 両方で使用する共有バリデーションスキーマを定義する。
  */
+
+export * from './article.ts';
